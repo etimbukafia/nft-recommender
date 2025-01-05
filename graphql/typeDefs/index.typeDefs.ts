@@ -1,0 +1,1 @@
+export { getNFTTypeDefs as typeDefs } from "./Nft.typeDefs";

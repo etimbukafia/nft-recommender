@@ -1,0 +1,1 @@
+export { NFTResolvers as resolvers } from "./Nft.resolvers";
