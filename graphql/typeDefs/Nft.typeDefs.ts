@@ -5,7 +5,6 @@ import { GraphQLJSONObject } from 'graphql-type-json';
 export const getNFTTypeDefs = gql`
     input nftVariables {
         address: String!
-        chain: String!
     }
 
     type Query {

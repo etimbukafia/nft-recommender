@@ -59,14 +59,18 @@ async def fetch_image(url: str, token_id: str, failed_images: list):
         return None
 
 def get_single_image_embedding(nft_image, processor, model, device: str = device):
-  image = processor(
-      text = None,
-      images = nft_image,
-      return_tensors="pt"
-      )["pixel_values"].to(device)
-  embedding = model.get_image_features(image)
-  # convert the embeddings to numpy array
-  return embedding.cpu().detach().numpy()
+    image = processor(
+        text=None,
+        images=nft_image,
+        return_tensors="pt"
+    )["pixel_values"].to(device)
+
+    embedding = model.get_image_features(image)
+
+    # Convert to NumPy array and return
+    embedding = embedding.cpu().detach().numpy()
+
+    return embedding
 
 async def get_all_image_embeddings_and_upsert(
         image_urls: dict[str, str], 
