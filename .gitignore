@@ -1,2 +1,3 @@
 .env
 node_modules/
+python_src/nft_recommendation.ipynb
