@@ -22,7 +22,7 @@ It leverages asynchronous operations for efficient data fetching and is designed
 
 1. Clone the Repository:
 ```
-git clone https://github.com/yourusername/nftRecommender.git
+git clone https://github.com/etimbukafia/nftRecommender.git
 ```
 
 2. Navigate to the Project Directory:
