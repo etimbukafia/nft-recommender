@@ -1,5 +1,5 @@
 # NFT Recommender
-NFT Recommender is a Python-based application built with FastAPI that fetches NFT metadata and images with Moralis API and recommends NFTs based on customizable criteria. 
+NFT Recommender is a Python-based AI application built with FastAPI that fetches NFT metadata and images with Moralis API and recommends NFTs based on the latest NFT purchases of the user. 
 It leverages asynchronous operations for efficient data fetching and is designed to integrate seamlessly with front-end applications, including those using TypeScript.
 
 ## Features
